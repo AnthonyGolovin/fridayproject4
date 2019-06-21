@@ -94,3 +94,8 @@ img {
 body {
 background-color: #e0e0e0;
 }
+button {
+  margin-left: 40px;
+  margin-right: 30px;
+  background-color: #8e0404;
+}

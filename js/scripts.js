@@ -46,7 +46,7 @@ $("#addToCart").click(function(event) {
  event.preventDefault();
  console.log(pizzaPurchase);
   pizzaPurchase.totalPrice();
-  $("#output").text(pizzaPurchase.totalPrice());
+  $("#output").text("$" + pizzaPurchase.totalPrice() + ".00" );
     $("#output2").text(pizzaCart.itemsInCart());
 
 
