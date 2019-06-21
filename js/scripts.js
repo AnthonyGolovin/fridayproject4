@@ -21,15 +21,29 @@ function Pizza(topping, crust, size) {
     var inputtedSizeStr = $("#sizeChoice :selected").text();
   console.log(inputtedTopping);
   console.log(inputtedToppingStr);
-var pizzaPurchase = new Pizza(inputtedTopping, inputtedCrust, inputtedSize);
-console.log(pizzaPurchase);
-console.log(Object.values(pizzaPurchase));
+  var pizzaPurchase = new Pizza(inputtedTopping, inputtedCrust, inputtedSize);
+  var selectedItems = Object.values(pizzaPurchase);
+  console.log(pizzaPurchase);
+  console.log(Object.values(pizzaPurchase));
+  console.log(selectedItems);
+  console.log(selectedItems.reduce((a, b) => a + b));
+  pizzaPurchase.totalPrice();
 });
-  var totalPrice = pizzaPurchase
+
+  // var pizzaPurchase = new Pizza(inputtedTopping, inputtedCrust, inputtedSize);
+  // var totalPrice = Object.values(pizzaPurchase);
+  // var optionsArray = [];
+Pizza.prototpye.totalPrice = function() {
+  return this.topping + this.crust + this.size;
+
+}
 
 $("#addToCart").click(function(event) {
-event.preventDefault();
-  for (var i = 0; i <= pizzaPurchase.length; i++);
+
+  pizzaPurchase.totalPrice();
+
+
+
 
 
 
@@ -53,4 +67,5 @@ event.preventDefault();
 //
 // }
   });
+};
 });
