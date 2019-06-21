@@ -12,7 +12,7 @@
     <div class="jumbotron">
       <div class="row">
         <div class="col-md-2">
-          <a href="test.html"type="button" class="btnhead"><strong>Home</strong></a>
+          <a href="index.html"type="button" class="btnhead"><strong>Home</strong></a>
         </div>
         <div class="col-md-2">
           <a href="test.html"type="button" class="btnhead"><strong>Pizzas</strong></a>
@@ -37,9 +37,9 @@
           </div>
           <select class="form-control" id="toppingChoice">
             <option value="1">Pepperoni</option>
-            <option value="1.50">Pineapple</option>
-            <option value="2">Fish Sticks</option>
-            <option value="3">Vegetables</option>
+            <option value="2">Pineapple</option>
+            <option value="3">Fish Sticks</option>
+            <option value="4">Vegetables</option>
           </select>
           <img src="http://elainespizza.com/facebookimages/Pizza3.jpg">
         </div>
@@ -52,9 +52,9 @@
             </div>
             <select class="form-control" id="crustChoice">
               <option value="1">Pan Crust</option>
-              <option value="1">Thin Crust</option>
+              <option value="2">Thin Crust</option>
               <option value="3">Stuffed Crust</option>
-              <option value="1">No Crust</option>
+              <option value="4">No Crust</option>
             </select>
             <img src="http://elainespizza.com/facebookimages/Pizza3.jpg">
           </div>
@@ -74,13 +74,21 @@
             <img src="http://elainespizza.com/facebookimages/Pizza3.jpg">
           </div>
         </div>
-        <div>
-          <button type="click" id="purchase" class="btn-primary">Purchase pizza</button>
-        </div>
     </form>
-    <div>
-      <button type="click" id="addToCart" class="btn-primary">Add to Cart</button>
+    <div class="jumbotronCart">
+      <div class="row">
+        <div>
+          <button type="click" id="purchase" class="btn-primary">Add Items</button>
+          <button type="click" id="addToCart" class="btn-primary">Purchase</button>
+        </div>
+      </div>
     </div>
-    <p id="output"> </p>
+    <div class="jumbotronPurchase">
+        <h4>Price:</h4>
+        <p id="output"></p>
+        <h4>Items:</h4>
+        <p id="output2"> </p>
+      </div>
+
   </body>
 </html>

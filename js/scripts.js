@@ -10,8 +10,13 @@ function Pizza(topping, crust, size) {
   this.crust = crust,
   this.size = size
 }
+function Cart(topping, crust, size) {
+  this.topping = topping,
+  this.crust = crust,
+  this.size = size
+}
 var pizzaPurchase;
-var price = Pizza.totalPrice;
+
 
   $("#purchase").click(function(event) {
   event.preventDefault();
@@ -21,22 +26,19 @@ var price = Pizza.totalPrice;
     var inputtedToppingStr = $("#toppingChoice :selected").text();
     var inputtedCrustStr = $("#crustChoice :selected").text();
     var inputtedSizeStr = $("#sizeChoice :selected").text();
-  console.log(inputtedTopping);
-  console.log(inputtedToppingStr);
   pizzaPurchase = new Pizza(inputtedTopping, inputtedCrust, inputtedSize);
+  pizzaCart = new Cart(inputtedToppingStr, inputtedCrustStr, inputtedSizeStr);
   var selectedItems = Object.values(pizzaPurchase);
-  console.log(pizzaPurchase);
-  console.log(Object.values(pizzaPurchase));
   console.log(selectedItems);
-  console.log(selectedItems.reduce((a, b) => a + b));
+
   pizzaPurchase.totalPrice();
   console.log(pizzaPurchase.totalPrice());
 });
 
-  // var pizzaPurchase = new Pizza(inputtedTopping, inputtedCrust, inputtedSize);
-  // var totalPrice = Object.values(pizzaPurchase);
-  // var optionsArray = [];
 Pizza.prototype.totalPrice = function() {
+  return this.topping + this.crust + this.size;
+}
+Cart.prototype.itemsInCart = function() {
   return this.topping + this.crust + this.size;
 }
 
@@ -45,8 +47,8 @@ $("#addToCart").click(function(event) {
  console.log(pizzaPurchase);
   pizzaPurchase.totalPrice();
   $("#output").text(pizzaPurchase.totalPrice());
+    $("#output2").text(pizzaCart.itemsInCart());
 
 
   });
 });
-;
