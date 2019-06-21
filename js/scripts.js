@@ -44,30 +44,9 @@ $("#addToCart").click(function(event) {
  event.preventDefault();
  console.log(pizzaPurchase);
   pizzaPurchase.totalPrice();
+  $("#output").text(pizzaPurchase.totalPrice());
 
 
-
-
-
-
-
-
-
-
-
-//     $("#purchase").click(function() {
-//       if () {
-//
-//       } else if () {
-//
-//         } else if () {
-//
-//           }
-//
-//     })
-// function price() {
-//
-// }
   });
 });
 ;
