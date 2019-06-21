@@ -1,7 +1,8 @@
+$(document).ready(function() {
+
 //Array
 function PizzaOptions() {
-  this.toppings = [],
-
+  this.selections = []
 }
 //Objects
 function Pizza(topping, crust, size) {
@@ -10,17 +11,30 @@ function Pizza(topping, crust, size) {
   this.size = size
 }
 
-var inputtedTopping = $("#toppingChoice :selected").val();
-var inputtedCrust = $("#crustChoice :selected").val();
-var inputtedSize = $("#sizeChoice :selected").val();
+  $("#purchase").click(function(event) {
+  event.preventDefault();
+    var inputtedTopping = $("#toppingChoice :selected").val();
+    var inputtedCrust = $("#crustChoice :selected").val();
+    var inputtedSize = $("#sizeChoice :selected").val();
+    var inputtedToppingStr = $("#toppingChoice :selected").text();
+    var inputtedCrustStr = $("#crustChoice :selected").text();
+    var inputtedSizeStr = $("#sizeChoice :selected").text();
+  console.log(inputtedTopping);
+  console.log(inputtedToppingStr);
+  
+});
 
-$("#purchase").click(function() {
-  if () {
-
-  } else if () {
-
-    } else if () {
-
-      }
-
-})
+//     $("#purchase").click(function() {
+//       if () {
+//
+//       } else if () {
+//
+//         } else if () {
+//
+//           }
+//
+//     })
+// function price() {
+//
+// }
+});
