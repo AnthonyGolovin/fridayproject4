@@ -9,3 +9,18 @@ function Pizza(topping, crust, size) {
   this.crust = crust,
   this.size = size
 }
+
+var inputtedTopping = $("#toppingChoice :selected").val();
+var inputtedCrust = $("#crustChoice :selected").val();
+var inputtedSize = $("#sizeChoice :selected").val();
+
+$("#purchase").click(function() {
+  if () {
+
+  } else if () {
+
+    } else if () {
+
+      }
+
+})
