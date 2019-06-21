@@ -17,7 +17,6 @@ function Cart(topping, crust, size) {
 }
 var pizzaPurchase;
 
-
   $("#purchase").click(function(event) {
   event.preventDefault();
     var inputtedTopping = parseInt($("#toppingChoice :selected").val());
