@@ -1,0 +1,43 @@
+.btnhead {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  padding: 10px 12px;
+  font-size: 20px;
+  line-height: 1.42857143;
+  color: white;
+  background-color: #8e0404;
+  float: right;
+  width: 150px;
+  border-radius:2px;
+  float; left:
+}
+.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #3a3a3a;
+}
+.jumbotronOptions {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #3a3a3a;
+}
+.jumbotronHeader {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #ffffff;
+}
